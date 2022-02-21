@@ -92,7 +92,8 @@ jdk:
 
 script:
   - chmod +x gradlew
-  - ./gradlew :fineract-provider:jibDockerBuild -x test
+  - ./gradlew build connectedCheck
+  # - ./gradlew :fineract-provider:jibDockerBuild -x test
   
 
 before_cache:
