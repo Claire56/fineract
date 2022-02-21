@@ -92,6 +92,7 @@ jdk:
 
 script:
   - git update-index --chmod=+x gradlew
+  - chmod +x gradlew
   - ./gradlew :fineract-provider:jibDockerBuild -x test
   
 
