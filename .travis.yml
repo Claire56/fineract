@@ -91,6 +91,7 @@ jdk:
   - oraclejdk17
 
 script:
+  - git update-index --chmod=+x gradlew
   - ./gradlew :fineract-provider:jibDockerBuild -x test
   
 
