@@ -73,7 +73,7 @@ before_script:
   - $JAVA_HOME/bin/java -version
 
 script:
-  - ./gradlew build connectedCheck
+#   - ./gradlew build connectedCheck
   - date
 # Using travis_wait for a proccess that could take longer than 20 minutes, in this case the SonaQube analysis
 # https://docs.travis-ci.com/user/common-build-problems/#build-times-out-because-no-output-was-received
